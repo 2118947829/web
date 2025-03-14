@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+body {
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+
+body {
+  color: #fff;
+  font-size: 0.1rem;
+  background: rgba(177, 160, 161, 0.1);
+  /* background: #000 url(../images/aigei.gif) no-repeat; */
+  background-size: cover;
+}
+body {
+  overflow: hidden;
+}
+
+.canvas {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* html {
+  background: -webkit-radial-gradient(
+    50% 35%,
+    farthest-corner,
+    #365ec7,
+    #24418b,
+    #11285e,
+    #031338
+  );
+  background: radial-gradient(
+    50% 35%,
+    farthest-corner,
+    #034f8e,
+    #034987,
+    #02366d,
+    #002353
+  );
+} */
+
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+
+li {
+  list-style-type: none;
+}
+
+i {
+  margin: 0px;
+  padding: 0px;
+  text-indent: 0px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #399bff;
+}
+
+a.active,
+a:focus {
+  outline: none !important;
+  text-decoration: none;
+}
+
+ol,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  color: #06c;
+  text-decoration: none !important;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*谷哥滚动条样式*/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5bc0de;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+/***/
+
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 0.3rem;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1c;
+  text-align: center;
+}
+
+.loadbox {
+  position: absolute;
+  width: 160px;
+  height: 150px;
+  color: #324e93;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -75px;
+}
+
+.loadbox img {
+  margin: 10px auto;
+  display: block;
+  width: 40px;
+}
+
+.head {
+  height: 0.9rem;
+  background: url(../images/head_bg.png) no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.head h1 {
+  color: #bde4ff;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 0.38rem;
+  display: flex;
+  height: 0.9rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.head h1 img {
+  width: 2.4rem;
+  display: inline-block;
+  margin-right: 0.15rem;
+}
+
+html,
+body {
+  height: 100%;
+}
